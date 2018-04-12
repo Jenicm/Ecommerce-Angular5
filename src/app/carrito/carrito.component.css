@@ -1,0 +1,33 @@
+.color-btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.continer {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 75%;
+}
+
+a {
+    color: black;
+}
+
+.productos {
+    display: inline-flex;
+}
+
+.color-btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.container {
+    text-align: center;
+}

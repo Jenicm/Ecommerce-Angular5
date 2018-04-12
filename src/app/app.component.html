@@ -1,0 +1,57 @@
+<header>
+  <img id="logo" src="/assets/logo.png" alt="Imagen del logo" routerLink="/home" />
+</header>
+<div>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="col-md-3">
+        <a class="btn btn-lg btn-block" routerLink="/home">Inicio</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-lg btn-block" routerLink="/productos">Productos</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-lg btn-block" routerLink="/login">Insertar</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-lg btn-block" routerLink="/contactos">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <router-outlet></router-outlet>
+  <br>
+
+  <footer class="fixed-bottom">
+    <div class="row">
+      <div class="col-4" align="center">
+        <h4>Redes sociales</h4>
+        <a style="color: white;" href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-tumblr-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fab fa-pinterest-square fa-2x"></i></a>
+        <a style="color: white;" href=""><i class="fas fa-envelope fa-2x"></i></a>
+        <a style="color: white;" href=""></a>
+      </div>
+      <div class="col-4" align="center">
+        <div align="center">
+          <a style="color: white;" href="/assets/pdfs/cookies.pdf"><b>Politica de cookies</b></a><br>
+          <a routerLink="/contactos" style="color: white;"><b>Contacto</b></a>
+        </div>
+      </div>
+      <div class="col-4" align="center">
+        <div align="center"><br>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" aria-label="Search">
+            <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

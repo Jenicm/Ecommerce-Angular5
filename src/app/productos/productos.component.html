@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Produtos</h1>
+        <div *ngFor="let p of productoObservable | async" class="productos">
+          <ngb-alert type="secondary" [dismissible]="false" style="width: 342px">
+              <img src="{{ p.foto }}" alt="{{ p.titulo }}">
+              <hr>
+              <h3>{{ p.titulo }}</h3>
+              <h5>{{ p.precio }} €</h5>
+              <a [routerLink]="['/detalles', p._id]" class="btn btn-lg btn-block color-btn">Más detalles</a>
+            </ngb-alert>
+        </div>
+  </div>

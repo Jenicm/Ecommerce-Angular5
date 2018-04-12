@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Tu carrito</h1>
+      <div *ngFor="let p of carrito " class="productos">
+          <ngb-alert type="secondary" [dismissible]="false" style="width: 342px">
+              <img src="{{ p.foto }}" alt="{{ p.titulo }}">
+              <hr>
+              <h3>{{ p.titulo }}</h3>
+              <h5>{{ p.precio }} €</h5>
+              <h5>cantidad:{{ p.cantidad }}</h5>
+            </ngb-alert>
+      </div>
+      <h3 class="btn color-btn btn-lg btn-block">Precio total:{{ total }}</h3>
+      <br />
+      <a class="btn color-btn btn-lg btn-block" href="https://www.turitop.com/es/">Pagar</a>
+      <br />
+</div>
